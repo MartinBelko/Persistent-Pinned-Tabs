@@ -36,18 +36,9 @@ The extension registers lightweight event listeners that only fire when tab stat
 
 ## Installation
 
-### From Signed .xpi
-
 1. Download the latest `.xpi` from [Releases](../../releases)
 2. Open Firefox → `about:addons` → gear icon ⚙️ → **"Install Add-on From File…"**
 3. Select the `.xpi` file
-
-### Temporary (for development)
-
-1. Open `about:debugging` → **This Firefox** → **Load Temporary Add-on…**
-2. Select `manifest.json`
-
-> ⚠️ Temporary add-ons are removed when Firefox closes.
 
 ## Files
 
@@ -57,19 +48,3 @@ persistent-pinned-tabs/
 ├── background.js    # All extension logic (~30 lines)
 └── README.md
 ```
-
-## Alternative: No Extension Needed
-
-Before using this extension, try Firefox's **Custom History** settings:
-
-1. **Settings → Privacy & Security → History**
-2. Change to **"Use custom settings for history"**
-3. Uncheck "Remember browsing and download history"
-4. Uncheck "Remember search and form history"
-5. **Settings → General → Startup** → check **"Open previous windows and tabs"**
-
-This preserves session restore (including pinned tabs) while still clearing history. If that works for you, no extension is needed.
-
-## License
-
-MIT
