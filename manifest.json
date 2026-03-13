@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Persistent Pinned Tabs",
+  "version": "1.0",
+  "description": "Automatically remembers pinned tabs across browser restarts, even with history disabled.",
+  "permissions": ["tabs", "storage"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "persistent-pinned-tabs@martinbelko",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  }
+}
