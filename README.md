@@ -16,6 +16,9 @@ This extension solves that with zero configuration.
 
 There are no buttons, no options page, no manual "grab" step. Just pin your tabs and they persist.
 
+> [!NOTE]
+> The extension does not account for tab groups or containers that the tabs may be a member of, this primarily stems from the extension needing `cookies` permission, which goes against the motive of the extension, which is simplicity and privacy.
+
 ## Performance
 
 The extension registers lightweight event listeners that only fire when tab state changes. When nothing is happening, it executes **zero code**. Each save is a single storage write of a small array of URLs.
@@ -40,11 +43,14 @@ The extension registers lightweight event listeners that only fire when tab stat
 2. Open Firefox → `about:addons` → gear icon ⚙️ → **"Install Add-on From File…"**
 3. Select the `.xpi` file
 
+> [!NOTE]
+> Firefox on my Mac and Windows (version 148+) automatically installs the extension once you press the `.xpi` file. So step 2 and 3 may be not necessary.
+
 ## Files
 
 ```
 persistent-pinned-tabs/
 ├── manifest.json    # Extension manifest (MV3, Firefox)
-├── background.js    # All extension logic (~30 lines)
+├── background.js    # All extension logic
 └── README.md
 ```
