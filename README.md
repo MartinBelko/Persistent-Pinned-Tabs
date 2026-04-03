@@ -17,7 +17,7 @@ This extension solves that with zero configuration.
 There are no buttons, no options page, no manual "grab" step. Just pin your tabs and they persist.
 
 > [!NOTE]
-> The extension does not account for tab groups or containers that the tabs may be a member of, this primarily stems from the extension needing `cookies` permission, which goes against the motive of the extension, which is simplicity and privacy.
+> The extension does not account for tab groups or containers that the tabs may be a member of, this primarily stems from the extension needing `cookies` permission and the added complexity it adds, which goes against the motive of the extension, which is simplicity and privacy.
 
 ## Performance
 
